@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL HURIA FC WEBSITE HOME-PAGE</title>
+    <link rel="stylesheet" href="css-styling">
+
+
+        <style>
+            /*CSS-STYLING*/
+
+            /*GENERAL RESET*/
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-image: url('../huria/first.jpg');
+                background-size: cover;/* scale the entire image to fit*/
+                background-position: center;
+                background-repeat: no-repeat;
+        
+            }
+
+            .navbar{
+                width: 85;
+                margin: auto;
+                padding: -15px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo{
+                width: 55px;
+                cursor: pointer;
+                padding: 5px;
+                margin-left: 15px;
+                border-radius: 15px;
+            }
+
+            .navbar ul li{
+                list-style: none;
+                display:inline-block;
+                margin: 0 7px;
+                top: 0 10PXS;
+                position: relative;
+                right: 38px;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .navbar ul li a::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: rgb(18, 77, 165);
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                transition: 0.5s;
+                transform: scaleX(1);
+                transform-origin: left;
+            }  
+
+            .navbar ul li a:hover::after{
+                width: 100%;
+            }
+
+            .navbar .btnLogin-popup{
+                width: 130px;
+                height: 50px;
+                background: transparent;
+                border: 2px solid #fff;
+                outline: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1.1em;
+                color: #fff;
+                font-weight: 500;
+                margin-left: 40px;
+                transition: 0.5s;
+            }
+
+            .navbar .btnLogin-popup:hover{
+                background: #fff;
+                color: black;
+            }
+
+            .sub-menu-1{
+                display: none;
+            }
+
+            .navbar ul li:hover .sub-menu-1{
+                display: block;
+                position: absolute;
+                background: transparent;
+                margin-top: -15px;
+                margin-left: 10%;
+                margin: 5px;
+            }
+
+            .navbar ul li:hover .sub-menu-1 ul li{
+                width: 50px;
+                padding: 8px;
+                border-bottom: none;
+                background: transparent;
+                border-radius: 0;
+                text-align: left;
+            }
+
+            .content{
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                color: #fff;
+            }
+
+            .content h1{
+                font-size: 70px;
+                margin-top: 80px;
+            }
+            
+
+            .content p {
+                margin: 20px auto;
+                font-weight: 100;
+                line-height: 25px;
+                font-style:inherit;
+            }
+
+            .button{
+                width: 650px;
+                padding: 15px ;
+                text-align: center;
+                border-radius: 25px;
+                font-weight: bold;
+                border: 3px solid rgb(18,77,165);
+                background: transparent;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;    
+            }
+            
+            span{
+                border: none;
+                height: 200%;
+                width: 0;
+                background: rgb(18, 77, 165);
+                position: absolute;
+                left: 0;
+                transition: 0.5s;
+                bottom: -10px;
+                z-index: -1;
+
+            }
+            
+            button:hover span{
+                width: 100%;
+            }
+            button:hover{
+                border: none;
+            }
+            /*footer*/
+            footer{
+                background-color: white;
+                color: black;
+                text-align: center;
+                padding: 10px;
+                margin-top: auto;
+            }
+
+            /*Mobile Responsiveness*/
+            @media (max-width:768px) {
+                card-grid{
+                    flex-direction: column;
+                }
+            }
+            nav{
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            
+    
+
+    
+    </style>
+<body>
+
+    <div class="banner">
+    <div class="navbar">
+        <img src="1783707825896.jpg" class="logo">
+        <ul>
+            <li><a href="index.html" class="button-link">HOME</a></li>
+            <li><a href="huria contact page.html" class="button-link">CONTACT</a></li>
+            <li><a href="about.html" class="button-link">ABOUT US</a>
+
+            
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="about.html" class="button-link">CLUB'S HISTORY</a></li>
+                         <li><a href="video page.html" class="button-link">VIDEOS</a></li>
+                    </ul>
+                </div>
+            
+            
+            
+            
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+
+    
+        <h2><MARQUEE>WELCOME TO AL HURIA FOOTBALL CLUB WEBSITE HOME-PAGE </MARQUEE></h2>
+         <BR>
+         <BR>
+
+         <button class="button" id="span"><span></span>FOR MORE INFORMATIONS & INTERACTION..!!  PLEASE CLICK-ON THE ABOVE MENU</button>
+         
+         </div>
+     </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="year">2026</span> AL HURIA FOOTBALL CLUB. All rights reserved.</p>
+    </footer>
+
+
+
+
+
+       
+</body>
+</html>
