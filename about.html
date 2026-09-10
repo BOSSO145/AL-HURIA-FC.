@@ -1,0 +1,291 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+</head>
+<style>
+    *{
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background: #eaeaea;
+    }
+
+    .navbar{
+                width: 85;
+                margin: auto;
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo{
+                width: 50px;
+                cursor: pointer;
+                padding-right:  500PX;
+            }
+
+            .navbar ul li{
+                list-style:none;
+                display:inline-block;
+                margin:0 6px;
+                top: 0 10PX;
+                position: relative;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color:blue;
+                text-transform: uppercase;
+            }
+
+            .navbar ul li a::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: blue;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                transition: 0.5s;
+            }  
+
+            .navbar ul li a:hover::after{
+                width: 100%;
+            }
+
+        
+
+
+            .container{
+               position: absolute;
+               top: 50%;
+               left: 37%;
+               transform: translate(-50%,-50%);
+                width: 950px;
+                border-radius: 30px;
+                height:  600px;
+                background: #f5f5f5;
+               box-shadow: 0 30px 50px #dbdbdb;
+            }
+
+          .container .slide .item{
+              width: 200px;
+              height: 250px;
+              position: absolute;
+              top: 60%;
+              transform: translate(0,-50%);
+              border-radius: 20px;
+              box-shadow: 0 30px 50px #505050;
+              background-position: 50% 50%;
+              background-size: cover;
+              display: inline-block;
+              transition: 0.5s;
+            }
+
+           .slide .item:nth-child(1),
+           .slide .item:nth-child(2){
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+                border-radius: 0;
+                width: 100%;
+                height: 100%; 
+           }
+
+
+           .slide .item:nth-child(3){
+               left: 60%;
+            }
+           .slide .item:nth-child(4){
+               left:calc(60% + 210px);
+            }
+           .slide .item:nth-child(5){
+              left:calc(58% + 440px);
+            }
+
+           /*hero n = 0,1,2,3,...*/
+            .slide .item:nth-child(n+6){
+              left:calc(57% + 660px);
+              opacity: o;
+            }
+
+           .item .content{
+              position: absolute;
+              top: 50px;
+               left: 100px;
+              width: 300px;
+              text-align: left;
+              color: blue;
+              transform: translate(0,-50%);
+              font-family: system-ui;
+              display: none;
+            }
+
+           .slide .item:nth-child(2) .content{
+               display:block;
+            }
+
+            .content .name{
+              font-size: 26px;
+              text-transform: uppercase;
+              font-weight: bold;
+              opacity: 0;
+              animation: animate 1s ease-in-out 1 forwards;
+            }
+
+           .content .des{
+             margin-top: 10px;
+             margin-bottom: 20px;
+             opacity: 0;
+             animation: animate 1s ease-in-out 0.3s 1 forwards;
+
+            }
+
+            .content button{
+              padding: 10px 20px;
+              border: none;
+              cursor: pointer;
+              opacity: 0;
+              animation: animate 1s ease-in-out 0.6s 1 forwards;
+
+
+            }
+
+            @keyframes animate {
+                from{
+                 opacity: 0;
+                 transform: translate(0,100px);
+                 filter: blur(33px);
+                }
+
+               to{
+                   opacity: 1;
+                   transform: translate(0);
+                   filter: blur(0);
+                }
+            }
+
+            .button{
+               width: 100%;
+               text-align: center;
+               position: absolute;
+               bottom: 20px;
+            }
+
+            .button button{
+              width: 40px;
+              height: 35px;
+              border-radius: 8px;
+              border: none;
+              cursor: pointer;
+              margin: 0 5px;
+              border: 1px solid #000;
+               transition: o.3s;
+            }
+
+           .button button:hover{
+              background: blue;
+             color: #fff;
+            }    
+
+           /*footer*/
+            footer{
+                background-color: white;
+                color: black;
+                text-align: center;
+                padding: 10px;
+                margin-top: auto;
+            }
+
+
+</style>
+
+<body>
+    <div class="navbar">
+     <img class="logo">
+        <ul class="navbar">
+            <li><a href="index.html" class="button-link">HOME</a></li>
+            <li><a href="huria contact page.html" class="button-link">CONTACT</a></li>
+            <li><a href="about.html"  class="button-link">ABOUT</a></li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="slide">
+
+            <div class="item" style="background: url('../huria/5\ &\ 20.jpg');">
+                <div class="content">
+                    <div class="name">training</div>
+                    <div class="des">this is our team al huria fc</div>
+                    <button>see more</button>
+                </div>
+
+            </div><div class="item" style="background: url(../huria/5\ &\ 20.jpg);">
+                <div class="content">
+                    <div class="name">gym</div>
+                    <div class="des">this is our team al huria fc</div>
+                    <button>see more</button>
+                </div>
+
+            </div>
+
+            <div class="item" style="background: url(../huria/first.jpg);">
+                <div class="content">
+                    <div class="name">winning team</div>
+                    <div class="des">Competision begins from training</div>
+                    <button>see more</button>
+                </div>
+
+            </div>
+
+            <div class="item" style="background: url(../huria/qualification.jpg);">
+                <div class="content">
+                    <div class="name">QUALIFICATION TO 1ST DIVISION</div>
+                    <div class="des">Cheering & celebrating our victory</div>
+                    <button>see more</button>
+                </div>
+
+            </div>
+
+            <div class="item" style="background: url(../huria/sasa.jpg);">
+                <div class="content">
+                    <div class="name">winning</div>
+                    <div class="des">this is our team al huria fc</div>
+                    <button>see more</button>
+                </div>
+
+            </div>
+
+            <div class="item" style="background: url(../huria/first.jpg);">
+                <div class="content">
+                    <div class="name">hardwork</div>
+                    <div class="des">this is our team al huria fc</div>
+                    <button>see more</button>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="button">
+            <button class="prev"><i class=""></i></button>
+            <button class="next"><i class=""></i></button>
+        </div>
+
+    </div>
+
+ <script src="aap.js"></script>
+
+
+
+
+</body>
+</html> 
