@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+
+    <link rel="stylesheet" href="link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>video page</title>
+
+    <style>
+        /*css-style*/
+        /*general reset*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background: #162831;
+        }
+
+        
+            .navbar{
+                width: 85;
+                margin: auto;
+                padding: -15px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo{
+                width: 55px;
+                cursor: pointer;
+                padding: 5px;
+                margin-left: 15px;
+                border-radius: 15px;
+            }
+
+            .navbar ul li{
+                list-style: none;
+                display:inline-block;
+                margin: 0 7px;
+                top: 0 10PXS;
+                position: relative;
+                right: 38px;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .navbar ul li a::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                transition: 0.5s;
+                transform: scaleX(1);
+                transform-origin: left;
+            }  
+
+            .navbar ul li a:hover::after{
+                width: 100%;
+            }
+
+        .container{
+            width: 80%;
+            margin: 80px auto;
+        }
+
+        .container h1{
+            padding: 60px 0;
+            color: #fff;
+            font-style: inherit;
+            font-size: 44px;
+            text-align: end;
+        }
+
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .col{
+            flex-basis: 50%;
+            min-width: 250px;
+        }
+
+        .feature-img{
+            margin: 20%;
+            position: relative;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .small-img-row{
+            display: flex;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            width: 85%;
+
+        }
+
+        .small-img{
+            position: relative;
+        }
+
+        .small-img img{
+            width: 150px;
+        }
+
+        .small-img-row p{
+            width: 150px;
+            margin-left: 20px;
+            color: #162831;
+            font-size: 15px;
+        }
+
+        .play-btn{
+            width: 40px;
+            border-radius: 7px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+        }
+
+        .small-img .play-btn{
+            width: 35px;
+            border-radius: 8px;
+        }
+
+        .video-player{
+            width: 50%;
+            border-radius: 20px;
+            position: absolute;
+            margin-left:  -44%;
+            margin-top: -54%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: none;
+            padding-left: 40%;
+        }
+
+        video:focus{
+            outline: none;
+        }
+
+        .close-btn{
+            position: absolute;
+            top: 10px;
+            border-radius: 7px;
+            padding-top: -20%;
+            right: 10px;
+            width: 30px;
+            cursor: pointer;
+        }
+
+        /*footer*/
+            footer{
+                background-color: white;
+                color: black;
+                text-align: center;
+                padding: 10px;
+                margin-top: auto;
+            }
+
+            /*Mobile Responsiveness*/
+            @media (max-width:768px) {
+                card-grid{
+                    flex-direction: column;
+                }
+            }
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <div class="banner">
+    <div class="navbar">
+        <img src="1783707825896.jpg" class="logo">
+        <ul>
+            <li><a href="index.html" class="button-link">HOME</a></li>
+            <li><a href="huria contact page.html" class="button-link">CONTACT</a></li>
+            <li><a href="about.html" class="button-link">ABOUT US</a>
+
+            
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>WELCOME TO MY<BR>VIDEO-PAGE</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="../huria/5 & 20.jpg" width="100%">
+                    <img src="../huria/icon img/play-btn 1.jpg" class="play-btn" onclick="playvideo('../huria/Hleem Taj Alser - Hikayat (Official Music Video_ Prod by Dj Aloo) _ حكايات(720P_HD).mp4')" >
+                
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="5 & 20.jpg">
+                        <img src="../huria/icon img/play-btn 1.jpg" class="play-btn" onclick="playvideo('../huria/Hleem Taj Alser - Hikayat (Official Music Video_ Prod by Dj Aloo) _ حكايات(720P_HD).mp4')">
+                    </div>
+                    <p>jude</p>
+                </div>
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../huria/bellingham.png">
+                        <img src="../huria/icon img/play-btn 1.jpg" class="play-btn">
+                    </div>
+                    <p>jude</p>
+                </div>
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../huria/bellingham.png">
+                        <img src="../huria/icon img/play-btn 1.jpg" class="play-btn">
+                    </div>
+                    <p>jude</p>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+       
+    </div>
+
+    <div class="video-player" id="videoplayer">
+        <video width="100%" controls autoplay id="myvideo">
+                
+            <source src="Cardi B - Bodak Yellow OFFICIAL MUSIC VIDEO(360P).mp4" id="myvideo">
+        </video>
+        <img src="../huria/icon img/close-btm 1.jpg" class="close-btn" onclick="stopvideo()">
+    </div>
+
+    <script src="video.js"></script>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="year">2026</span> AL HURIA FOOTBALL CLUB. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

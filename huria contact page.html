@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR CONTACT PAGE</title>
+    <link rel="stylesheet" href="css;style">
+    <style>
+        /*CSS-STYLE*/
+        /*GENERAL-RESET*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .body{
+            background: #fff;
+        }
+
+            .navbar{
+                width: 85%;
+                margin: auto;
+                padding: -15px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo{
+                width: 55px;
+                cursor: pointer;
+                padding: 5px;
+                margin-left: 15px;
+                border-radius: 15px;
+            }
+
+            .navbar ul li{
+                list-style: none;
+                display:inline-block;
+                margin: 0 7px;
+                top: 0 10PXS;
+                position: relative;
+                right: 38px;
+            }
+
+            
+            .navbar ul li a{
+                text-decoration: none;
+                color: blue;
+                text-transform: uppercase;
+            }
+
+            .navbar ul li a::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: rgb(18, 77, 165);
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                transition: 0.5s;
+                transform: scaleX(1);
+                transform-origin: left;
+            }  
+
+            .navbar ul li a:hover::after{
+                width: 100%;
+            }
+            .contact-container{
+               height: 100vh;
+               display: flex;
+               align-items:center;
+               justify-content:space-around;
+            }
+
+            .contact-left{
+              display: flex;
+              flex-direction:column;
+              align-items:start;
+              gap: 20px;
+            }
+
+            .contact-left-tittle h4{
+              font-weight: 600;
+              color: #c9390d;
+              font-size: 40px;
+              gap: 20px;
+              font-style: inherit;
+              font-weight: bold;
+            }
+
+           .contact-left-tittle br {
+              width: 200px;
+              border: 1px solid red;
+              width: 120px;
+              height: 5px;
+              border-radius: 10px;
+              margin-bottom: 20px;
+            }
+
+           .contact-input{
+              width: 400px;
+              height: 50px;
+              border: transparent;
+              outline: none;
+              padding-left: 25px;
+              font-weight: 500px;
+              border-radius: 50px;
+              text-align:left;
+            }
+
+
+            .contact-left textarea{
+              height: 100px;
+              padding-top: 15px;
+              border-radius: 20px;
+            
+
+            }
+
+           .contact-input:hover{
+              border: 2px solid  #c9390d;
+            }
+
+            button{
+              width: 200px;
+              display: flex;
+              align-items: center;
+              padding: 15px 50px;
+              font-size: 16px;
+              color: #c9390d;
+              gap: 10px;
+              border: 1px solid #c9390d;
+              border-radius: 50px;
+              background:white;
+              cursor: pointer;
+              font-style:inherit;
+              font-weight: bold;
+            
+            }
+
+        
+
+            /*footer*/
+            footer{
+                background-color: rgb(34, 34, 110);
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                margin-top: auto;
+            }
+
+            /*Mobile Responsiveness*/
+            @media (max-width:768px) {
+                card-grid{
+                    flex-direction: column;
+                }
+            }
+    
+
+
+
+        
+      
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <img src="1783707825896.jpg" class="logo">
+        <ul>
+            <li><a href="index.html" class="button-link">HOME</a></li>
+            <li><a href="huria contact page.html" class="button-link">CONTACT</a></li>
+            <li><a href="about.html" class="button-link">ABOUT US</a>
+
+        
+        </ul>
+    </div>
+
+    <div class="contact-container">
+        <form action=" " class="contat-left">
+            <div class="contact-left-tittle">
+         <h4><marquee>WELCOME TO OUR OFFICIAL CONTACT-PAGE </marquee></h4>
+         <br>
+         <input type="text" name="Name" placeholder="YOUR NAME" class="contact-input" required=" ">
+         <input type="email" name="email" placeholder="YOUR EMAIL" class="contact-input" required=" ">
+         <input type="textarea" name="Message" placeholder="YOUR MESSAGE" row="30" col="40"  class="contact-input" required=" ">
+         <br>
+         <br>
+         <button type="submit">SUBMIT</button>
+         </div>
+        
+
+        </form>
+        
+    
+
+    
+    </div>
+
+    
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="year">2026</span> AL HURIA FOOTBALL CLUB. All rights reserved.</p>
+    </footer>
+
+
+
+    
+</body>
+</html> 
