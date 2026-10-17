@@ -183,10 +183,12 @@
             
 
             /*mobile responsiveness */
-            @media (min-width:600px) {
-                .banner-container{
+            @media (max-width:600px) {
+                .banner{
                     width:100%;
+                    height: auto; /*scale the entire image to fit*/
                     flex-wrap:wrap;
+                    
                 
                     
                 }
@@ -200,7 +202,7 @@
     </style>
 <body>
 
-    <div class="banner-container">
+    <div class="banner">
     <div class="navbar">
         <img src="huria logo.jpg" class="logo">
         <ul>
