@@ -180,27 +180,15 @@
                 margin-top: auto;
             }
 
-            /*mobile media query (screens 768px wide and small screen*/
-            @media (max-width:600px) {
-                .navbar{
-                    display:flex;
-                }
-                .banner{
-                    width:100%;/*span the full width of mobile screen*/
-                    height: auto;/*Automatically scales the height proportionally*/
-                    background-size:cover;/*scale the entire image to fit */
-                    background-position: centre;
-                    
-                }
-        
+            /*default styles apply to the Mobile screen*/
+            .body{
+                font-size:1rem;
             }
-                .logo{
-                    width:30px;
-                }
-                . button{
-                    width:100%; /*makes it stretch to the container boundaries*/
-                    display:block; /*allow the button to behave like block element*/
-                    boxing-size:/*ensures padding stays inside the 100% width*/
+
+            /*styles apply only to screen 768px wide and larger(tablets/desktops)*/
+            @media (min-width:768px) {
+                .body{
+                    font-size:1.2rem;
                 }
       }
             
