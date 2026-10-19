@@ -185,11 +185,11 @@
             /*show the banner only on screen narrow than 768px(mobile/tablets)*/
             @media screen and (max-width:768px){
                 . banner{
-                    display:flex;
-                    position: fixed;
-                    top:0;
+                    background-image: url('first.jpg')
+                    background-size:cover;
+                    background-position: centre;
                     width:100%;
-                    z-index:9999;
+                    height:50vh; /*adjust the height relatively to the mobile viewport */
                 }
                 
             }
