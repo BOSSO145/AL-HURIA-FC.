@@ -15,9 +15,7 @@
                 margin: 0;
                 padding: 0;
             }
-            .body{
-                background:#162831;
-            }
+        
 
             .banner {
                 width: 100%;
@@ -183,7 +181,7 @@
                 margin-top: auto;
             }
             /*mobile responsiveness*/
-            @media (max-width:768px){
+            @media (min-width: 768px){
                 . banner{
                     background-image: url('first.jpg')
                     background-size:cover;
@@ -191,11 +189,14 @@
                     width:100%; /*adjust the widths relatively to the mobile viewport*/
                     height:50vh; /*adjust the height relatively to the mobile viewport*/
                 }
+            }
 
                 . button{
                     width: auto; /*adjust the width relatively to mobile viewport*/
                     position:absolute;
                 }
+                /*mobile responsiveness*/
+                @media(min-width: 600px){
                 .card-grid{
                     flex-direction: column;
                 }
